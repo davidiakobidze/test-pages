@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InsightGen Market Report</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset + base */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Inter',sans-serif;line-height:1.7;color:#2d3748;
+      background:#edf2f7;
+    }
+
+    /* Top bar */
+    header{
+      background:linear-gradient(90deg,#4f46e5 0%,#6366f1 100%);
+      color:#fff;padding:16px 36px;display:flex;align-items:center;
+      justify-content:space-between;position:sticky;top:0;z-index:1000;
+      box-shadow:0 2px 6px rgba(0,0,0,.12);
+    }
+    header .brand{font-size:1.25rem;font-weight:600;letter-spacing:.5px}
+    header .download{
+      background:#fff;color:#4f46e5;border:none;border-radius:8px;
+      font-weight:600;font-size:.93rem;padding:8px 20px;text-decoration:none;
+      transition:background .2s;
+    }
+    header .download:hover{background:#e2e8f0}
+
+    /* Page grid */
+    .wrapper{max-width:1140px;margin:48px auto;padding:0 24px;display:grid;gap:40px;
+      grid-template-columns:260px 1fr;}
+    @media(max-width:960px){.wrapper{grid-template-columns:1fr}}
+
+    /* Sidebar nav */
+    nav{
+      background:#fff;border:1px solid #e2e8f0;border-radius:12px;
+      padding:24px;position:sticky;top:92px;height:max-content;
+    }
+    nav h3{font-size:.95rem;font-weight:600;text-transform:uppercase;color:#4f46e5;margin-bottom:12px}
+    nav a{
+      display:block;color:#4f46e5;text-decoration:none;font-size:.92rem;padding:6px 0;
+      border-left:3px solid transparent;transition:all .2s;
+    }
+    nav a:hover{border-left-color:#4f46e5;background:#f3f4ff}
+
+    /* Content card */
+    main{
+      background:#fff;padding:56px 64px;border-radius:16px;
+      box-shadow:0 8px 28px rgba(0,0,0,.08);
+    }
+    h1{font-size:2.1rem;font-weight:600;color:#2d3748;margin-bottom:20px}
+    h2{font-size:1.45rem;font-weight:600;color:#4f46e5;margin:44px 0 16px}
+    p{margin-bottom:18px;font-size:1.05rem}
+    ul{margin-left:18px;margin-bottom:18px}
+    li{margin-bottom:8px}
+
+    /* Highlight block */
+    .callout{
+      background:#ebf4ff;border-left:4px solid #4299e1;border-radius:8px;
+      padding:18px;margin:28px 0;font-size:1.03rem;color:#1a365d;
+    }
+
+    /* Mobile tweaks */
+    @media(max-width:640px){
+      main{padding:32px 24px}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky top bar -->
+  <header>
+    <div class="brand">InsightGen Market Report</div>
+    <a href="#" class="download">Download PDF</a>
+  </header>
+
+  <!-- Two-column layout -->
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav>
+      <h3>Jump to</h3>
+      <a href="#exec">Executive Summary</a>
+      <a href="#trends">Recent Trends</a>
+      <a href="#audience">Audience Insights</a>
+      <a href="#competitors">Competitor Analysis</a>
+      <a href="#strategy">Strategic Recommendations</a>
+      <a href="#next">Next Steps</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <h1 id="exec">Executive Summary</h1>
+      <div class="callout">
+        Key takeaway: Independent clothing retailers are uniquely positioned to leverage niche markets and sustainable practices.
+      </div>
+      <p>The independent clothing retail sector shows promise amidst evolving consumer preferences favoring ethical sourcing and unique products.</p>
+
+      <h2 id="trends">Recent Trends</h2>
+      <p>Market dynamics highlight a shift towards sustainability, with consumers increasingly valuing eco-friendly and ethically produced garments. There is a notable uptick in demand for personalized shopping experiences through online platforms.</p>
+
+      <h2 id="audience">Audience Insights</h2>
+      <p>Target demographics are leaning towards younger consumers aged 18-35, who are more inclined to spend on sustainable and diverse fashion options. They prioritize quality and uniqueness over price-point.</p>
+
+      <h2 id="competitors">Competitor Analysis</h2>
+      <p>Major competitors in the niche include established online brands and direct-to-consumer startups that capitalize on social media marketing and influencer collaborations. Recent entrants focus on hyper-local collections aligned with community trends.</p>
+
+      <h2 id="strategy">Strategic Recommendations</h2>
+      <ul>
+        <li>Expand online presence with a robust e-commerce platform to tap into the growing digital demand.</li>
+        <li>Implement sustainable practices in sourcing and marketing to attract conscious consumers.</li>
+        <li>Leverage social media for targeted marketing campaigns, collaborating with local influencers for broader reach.</li>
+      </ul>
+
+      <h2 id="next">Next Steps</h2>
+      <p>Develop a 30-day action plan to enhance online engagement, conduct market testing for new product lines, and establish community events to reinforce brand loyalty.</p>
+    </main>
+  </div>
+
+</body>
+</html>
