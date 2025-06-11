@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="032b8271-b976-48c6-8a5b-14c7c556cfad" name="Changes" comment="removed" />
+    <list default="true" id="032b8271-b976-48c6-8a5b-14c7c556cfad" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +74,7 @@
       <workItem from="1749483316063" duration="3262000" />
       <workItem from="1749541090092" duration="1678000" />
       <workItem from="1749561544962" duration="7659000" />
-      <workItem from="1749677231350" duration="687000" />
+      <workItem from="1749677231350" duration="1875000" />
     </task>
     <task id="LOCAL-00001" summary="removed">
       <option name="closed" value="true" />
@@ -260,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749677266642</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="removed">
+      <option name="closed" value="true" />
+      <created>1749682939095</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1749682939095</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update">
+      <option name="closed" value="true" />
+      <created>1749684220193</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1749684220193</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +295,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
