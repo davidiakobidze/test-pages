@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="032b8271-b976-48c6-8a5b-14c7c556cfad" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/redirect/stripe-done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bindya_Lulla_full_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bindya_Lulla_full_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bindya_Lulla_preorder_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bindya_Lulla_preorder_report.html" afterDir="false" />
-    </list>
+    <list default="true" id="032b8271-b976-48c6-8a5b-14c7c556cfad" name="Changes" comment="Update reports with new branding and enhanced market insights" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -297,7 +292,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749685238462</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Update reports and add payment success page">
+      <option name="closed" value="true" />
+      <created>1750760849090</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1750760849090</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update reports and add payment success page">
+      <option name="closed" value="true" />
+      <created>1750760863944</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1750760863944</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Update reports with new branding and enhanced market insights">
+      <option name="closed" value="true" />
+      <created>1750760920343</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1750760920343</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +336,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Update reports and add payment success page" />
+    <MESSAGE value="Update reports with new branding and enhanced market insights" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update reports with new branding and enhanced market insights" />
   </component>
 </project>
