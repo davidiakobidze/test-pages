@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Get Your Free Growth Insights</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start": new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KD2K28HN');</script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #ff8c00, #ffdd00);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin-bottom: 10px;
+            color: #ff5722;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .testimonial {
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+        }
+        input[type="email"] {
+            padding: 12px;
+            width: 100%;
+            border: 2px solid #ff5722;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #ff5722;
+            color: #ffffff;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.2s ease-in-out;
+        }
+        button:hover {
+            background-color: #e64a19;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD2K28HN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="container">
+    <h1>Unlock Your Potential!</h1>
+    <p>Join our community of successful boutique owners and receive exclusive marketing insights.</p>
+    <div class="testimonial">"InsightGen helped my boutique increase online sales by 50%!" - Emily, Boutique Owner</div>
+    <div class="testimonial">"The marketing strategies were a game changer for my business!" - Michael, Boutique Owner</div>
+    <form id="email-form">
+        <input id="email" placeholder="Your email" required type="email"/>
+        <button type="submit">Sign Up for Insights</button>
+        <div class="message" id="message"></div>
+    </form>
+</div>
+<script>
+    const form = document.getElementById("email-form");
+    const message = document.getElementById("message");
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+        try {
+            const res = await fetch("https://cheek.app.n8n.cloud/webhook/3eb8642a-d9d2-414e-bc55-c083a8d68627/email-capture", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ email })
+            });
+            if (res.ok) {
+                message.textContent = "✅ Your email has been saved!";
+                message.style.color = "#00ffae";
+                message.style.display = "block";
+                form.reset();
+            } else {
+                message.textContent = "❌ Something went wrong. Please try again.";
+                message.style.color = "#ff8888";
+                message.style.display = "block";
+            }
+        } catch (err) {
+            console.error(err);
+            message.textContent = "❌ Network error. Please try again.";
+            message.style.color = "#ff8888";
+            message.style.display = "block";
+        }
+    });
+</script>
+</body>
+</html>
