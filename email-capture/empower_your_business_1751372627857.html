@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Get Your Free Growth Insights</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);     })(window,document,'script','dataLayer','GTM-KD2K28HN');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #2c3e50, #3498db);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        input[type="email"] {
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #ffffff;
+            color: #3498db;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.2s ease-in-out;
+        }
+        button:hover {
+            background-color: #f1f1f1;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD2K28HN"                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="container">
+    <h1>Get Your Free Report</h1>
+    <p>Enter your email to receive personalized growth insights for your business.</p>
+    <form id="email-form">
+        <input id="email" placeholder="Your email" required type="email"/>
+        <button type="submit">Get Insights</button>
+        <div class="message" id="message"></div>
+    </form>
+</div>
+<script>
+   const form = document.getElementById("email-form");
+   const message = document.getElementById("message");
+    form.addEventListener("submit", async (e) => {
+     e.preventDefault();
+     const email = document.getElementById("email").value;
+      try {
+       const res = await fetch("https://cheek.app.n8n.cloud/webhook/3eb8642a-d9d2-414e-bc55-c083a8d68627/email-capture", {
+         method: "POST",
+         headers: {
+           "Content-Type": "application/json"
+         },
+         body: JSON.stringify({ email })
+       });
+        if (res.ok) {
+         message.textContent = "✅ Your email has been saved!";
+         message.style.color = "#00ffae";
+         message.style.display = "block";
+         form.reset();
+       } else {
+         message.textContent = "❌ Something went wrong. Please try again.";
+         message.style.color = "#ff8888";
+         message.style.display = "block";
+       }
+     } catch (err) {
+       console.error(err);
+       message.textContent = "❌ Network error. Please try again.";
+       message.style.color = "#ff8888";
+       message.style.display = "block";
+     }
+   });
+</script>
+</body>
+</html>
