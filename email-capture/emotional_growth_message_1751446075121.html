@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grow Your Boutique</title>
+    <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KD2K28HN');</script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            background: url('https://raw.githubusercontent.com/davidiakobidze/test-pages/main/assets/1751445727969.png') center center / cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 20px;
+            max-width: 700px;
+            color: #1f2937;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #4f46e5;
+            font-weight: 700;
+        }
+
+        .content .subtitle {
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #6b7280;
+        }
+
+        .testimonials {
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #1f2937;
+            font-style: italic;
+        }
+
+        .call-to-action {
+            background: linear-gradient(135deg, #4f46e5, #3730a3);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .form-container {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 25px;
+        }
+
+        .form-container h3 {
+            color: #1f2937;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        input[type="email"] {
+            padding: 15px;
+            font-size: 16px;
+            width: 100%;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #4f46e5;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: linear-gradient(135deg, #4f46e5, #3730a3);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                margin: 20px;
+                padding: 30px;
+            }
+            .content h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe height="0"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KD2K28HN" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="overlay"></div>
+<div class="content">
+    <h1>Build Emotional Connections with Your Customers</h1>
+    <p class="subtitle">Read heartwarming stories from boutique owners who transformed their business through genuine relationships.</p>
+
+    <div class="testimonials">
+        <div class="testimonial">"Thanks to the insights provided, I was able to genuinely connect with my customers. My sales have never been better!" - Sarah, Boutique Owner</div>
+        <div class="testimonial">"The strategies I learned helped me create a loyal community around my brand. I can't believe the change!" - James, Boutique Owner</div>
+        <div class="testimonial">"Emotional connections matter! My store feels more alive, and so do my sales!" - Emily, Boutique Owner</div>
+    </div>
+
+    <div class="call-to-action">Learn More About Building Connections</div>
+
+    <div class="form-container">
+        <h1>Get Your Free Resources</h1>
+        <p>Enter your email to receive insights on customer relationships and growth strategies.</p>
+        <form id="email-form">
+            <input id="email" placeholder="Your email" required type="email"/>
+            <button type="submit">Subscribe</button>
+            <div class="message" id="message"></div>
+        </form>
+    </div>
+    <script>
+      // Send webhook request when page loads
+      window.addEventListener('load', function() {
+        fetch('https://cheek.app.n8n.cloud/webhook/3eb8642a-d9d2-414e-bc55-c083a8d68627/email-capture-open', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            event: 'page_open',
+            timestamp: new Date().toISOString(),
+            url: window.location.href,
+            userAgent: navigator.userAgent
+          })
+        })
+      });
+
+      const form = document.getElementById("email-form");
+      const message = document.getElementById("message");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+
+        try {
+          const res = await fetch("https://cheek.app.n8n.cloud/webhook/3eb8642a-d9d2-414e-bc55-c083a8d68627/email-capture", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ email })
+          });
+
+          if (res.ok) {
+            message.textContent = "✅ Your email has been saved!";
+            message.style.color = "#00ffae";
+            message.style.display = "block";
+            form.reset();
+          } else {
+            message.textContent = "❌ Something went wrong. Please try again.";
+            message.style.color = "#ff8888";
+            message.style.display = "block";
+          }
+        } catch (err) {
+          console.error(err);
+          message.textContent = "❌ Network error. Please try again.";
+          message.style.color = "#ff8888";
+          message.style.display = "block";
+        }
+      });
+    </script>
+</div>
+</body>
+</html>
