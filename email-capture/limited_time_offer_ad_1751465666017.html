@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unlock Your Boutique's Revenue in 7 Days</title>
+    <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KD2K28HN');</script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --theme-color: #00aaff;
+            --theme-color-dark: #007bb5;
+            --theme-color-rgb: 0, 170, 255;
+            --theme-color-dark-rgb: 0, 123, 181;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #212121;
+            background: #FFFFFF;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(var(--theme-color-rgb), 0.3) 0%, rgba(var(--theme-color-dark-rgb), 0.3) 100%), url('https://raw.githubusercontent.com/davidiakobidze/test-pages/main/assets/1751465460430.png') center center / 80% no-repeat;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero-text {
+            text-align: left;
+        }
+
+        .hero-form {
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: #FFFFFF;
+            color: var(--theme-color);
+            padding: 18px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+
+
+        /* Feature Trio */
+        .features {
+            padding: 50px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #212121;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .feature h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #212121;
+        }
+
+        .feature p {
+            color: #6B7280;
+            line-height: 1.6;
+        }
+
+        /* Deep-Dive Block */
+        .deep-dive {
+            padding: 50px 0;
+            background: #F8F9FA;
+        }
+
+        .deep-dive-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .product-screenshot {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .screenshot-placeholder {
+            width: 100%;
+            height: 320px;
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: #212121;
+            font-size: 1rem;
+            border: 2px solid #E5E7EB;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .report-header {
+            background: linear-gradient(135deg, var(--theme-color), var(--theme-color-dark));
+            color: white;
+            padding: 12px;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .report-header::before {
+            content: '📊';
+            font-size: 1.1rem;
+        }
+
+        .report-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            flex: 1;
+        }
+
+        .report-section {
+            background: #F8F9FA;
+            padding: 8px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+        }
+
+        .report-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 0;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        .report-metric:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            color: #6B7280;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-weight: 500;
+            font-size: 0.75rem;
+        }
+
+        .metric-value {
+            color: var(--theme-color);
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .metric-icon {
+            font-size: 0.85rem;
+        }
+
+        .highlight-metric {
+            background: linear-gradient(135deg, var(--theme-color), var(--theme-color-dark));
+            color: white;
+            padding: 6px 8px;
+            border-radius: 6px;
+            margin-bottom: 4px;
+        }
+
+        .highlight-metric .metric-label {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .highlight-metric .metric-value {
+            color: white;
+            font-size: 1rem;
+        }
+
+        .outcomes-list {
+            list-style: none;
+        }
+
+        .outcomes-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #E5E7EB;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .outcomes-list li:before {
+            content: '✓';
+            color: #3F5BFF;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Credibility Bar */
+        .credibility {
+            padding: 30px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .credibility-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #6B7280;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 50px 0;
+            background: #F8F9FA;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            background: white;
+            cursor: pointer;
+            font-weight: 600;
+            border-bottom: 1px solid #E5E7EB;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            color: #6B7280;
+            display: none;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Sticky Bottom Bar */
+        .sticky-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--theme-color);
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            z-index: 1000;
+            display: none;
+        }
+
+        .sticky-bar .cta-button {
+            background: white;
+            color: var(--theme-color);
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        /* Form Container */
+        .form-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-container h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #212121;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #E5E7EB;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            background: white;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: var(--theme-color);
+        }
+
+        .form-container .cta-button {
+            background: var(--theme-color);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+        }
+
+        .form-container .cta-button:hover {
+            background: var(--theme-color-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(var(--theme-color-rgb), 0.3);
+        }
+
+        .message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            display: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .deep-dive-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .client-logos {
+                gap: 30px;
+            }
+
+            .sticky-bar {
+                display: block;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .faq .section-title {
+            font-size: 3.2rem;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe height="0"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KD2K28HN" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Boost Your Sales by Up to 67%! Act Now!</h1>
+                <p class="subtitle">Get your FREE AI-powered performance report and discover the exact strategies that helped 50K+ boutique owners increase revenue by up to 67%</p>
+            </div>
+            <div class="hero-form">
+                <div class="form-container">
+                    <h3>Get Your FREE Report Now</h3>
+                    <form id="email-form">
+                        <input id="email" placeholder="Enter your email address" required type="email"/>
+                        <button type="submit" class="cta-button">Get My FREE Report</button>
+                        <div class="message" id="message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Feature Trio -->
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">What You'll Get</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <span class="feature-icon">📊</span>
+                <h3>Performance Analysis</h3>
+                <p>Compare your boutique's performance against industry standards and identify areas for improvement.</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">💰</span>
+                <h3>Revenue Opportunities</h3>
+                <p>Discover untapped revenue streams and strategies to boost your bottom line significantly.</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🎯</span>
+                <h3>Action Plan</h3>
+                <p>Get a step-by-step action plan to maximize your profits and operational efficiency.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Deep-Dive Block -->
+<section class="deep-dive">
+    <div class="container">
+        <div class="deep-dive-content">
+            <div class="product-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="report-header">Your Boutique Performance Report</div>
+                    <div class="report-content">
+                        <div class="highlight-metric">
+                            <div class="report-metric">
+                                <span class="metric-label">
+                                    <span class="metric-icon">🚀</span>
+                                    Revenue Growth Potential
+                                </span>
+                                <span class="metric-value">+67%</span>
+                            </div>
+                        </div>
+                        <div class="report-section">
+                            <div class="report-metric">
+                                <span class="metric-label">
+                                    <span class="metric-icon">🏆</span>
+                                    Top Product Category
+                                </span>
+                                <span class="metric-value">Accessories</span>
+                            </div>
+                            <div class="report-metric">
+                                <span class="metric-label">
+                                    <span class="metric-icon">💰</span>
+                                    Pricing Optimization
+                                </span>
+                                <span class="metric-value">$2,400/mo</span>
+                            </div>
+                        </div>
+                        <div class="report-section">
+                            <div class="report-metric">
+                                <span class="metric-label">
+                                    <span class="metric-icon">👥</span>
+                                    Customer Retention
+                                </span>
+                                <span class="metric-value">+45%</span>
+                            </div>
+                            <div class="report-metric">
+                                <span class="metric-label">
+                                    <span class="metric-icon">📦</span>
+                                    Inventory Efficiency
+                                </span>
+                                <span class="metric-value">+32%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="section-title">Transform Your Business</h2>
+                <ul class="outcomes-list">
+                    <li>Increase revenue by up to 67% in 30 days</li>
+                    <li>Identify your top-performing products and categories</li>
+                    <li>Optimize pricing strategies for maximum profit</li>
+                    <li>Improve customer retention and lifetime value</li>
+                    <li>Streamline operations and reduce costs</li>
+                    <li>Get competitive insights and market positioning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Credibility Bar -->
+<section class="credibility">
+    <div class="container">
+        <div class="credibility-badges">
+            <div class="badge">🔒 Secure & Private</div>
+            <div class="badge">✅ 50K+ Boutiques Analyzed</div>
+            <div class="badge">⚡ 24h Report Delivery</div>
+            <div class="badge">💰 67% Avg Revenue Increase</div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">How long does it take to get my report? <span>+</span></div>
+            <div class="faq-answer">Our AI system generates your personalized report in just 5 minutes! Once you submit your email, our advanced algorithms analyze boutique performance patterns and create a customized report with actionable insights for your business.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Is this really free? <span>+</span></div>
+            <div class="faq-answer">Yes! This is a limited-time preorder offer. The report normally costs $9 but is completely free for preorder.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What information do you need from me? <span>+</span></div>
+            <div class="faq-answer">Just your email address. We'll use AI to analyze your boutique's potential and create a personalized report.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I unsubscribe from emails? <span>+</span></div>
+            <div class="faq-answer">Absolutely! You can unsubscribe anytime with one click. We respect your privacy.</div>
+        </div>
+    </div>
+</section>
+
+<!-- Sticky Bottom Bar -->
+<div class="sticky-bar">
+    <span>Ready to transform your boutique?</span>
+    <button class="cta-button">Get FREE Report</button>
+</div>
+
+<script>
+    // Send webhook request when page loads
+    window.addEventListener('load', function() {
+        fetch('https://cheek.app.n8n.cloud/webhook/3eb8642a-d9d2-414e-bc55-c083a8d68627/email-capture-open', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                event: 'page_open',
+                timestamp: new Date().toISOString(),
+                url: window.location.href,
+                userAgent: navigator.userAgent
+            })
+        });
+    });
+
+    // FAQ Toggle
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.classList.toggle('active');
+        });
+    });
+
+    // Form Submission
+    const form = document.getElementById("email-form");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+
+        try {
+            const res = await fetch("https://cheek.app.n8n.cloud/webhook/3eb8642a-d9d2-414e-bc55-c083a8d68627/email-capture", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ email })
+            });
+
+            if (res.ok) {
+                message.textContent = "✅ Your email has been saved!";
+                message.style.color = "#00ffae";
+                message.style.display = "block";
+                form.reset();
+            } else {
+                message.textContent = "❌ Something went wrong. Please try again.";
+                message.style.color = "#ff8888";
+                message.style.display = "block";
+            }
+        } catch (err) {
+            console.error(err);
+            message.textContent = "❌ Network error. Please try again.";
+            message.style.color = "#ff8888";
+            message.style.display = "block";
+        }
+    });
+</script>
+</body>
+</html>
